@@ -6,7 +6,8 @@ var spawn   = require('child_process').spawn;
 var fs      = require('fs');
 var ws      = require('websocket').server;
 
-server.listen(80);
+//绑定本地端口
+server.listen(80,"127.0.0.1");
 console.log('Linux Dash Server Started!');
 
 app.use(express.static(path.resolve(__dirname + '/../')));
